@@ -110,11 +110,15 @@ label {
 }
 @media (max-width: 700px) {
   .contact-menu {
-    width: 70%;
+    width: 78%;
+    top:65%;
+    left:56%;
   }
+
   form {
     width: 100%;
   }
+
   input,
   #message {
     width: 92%;
@@ -123,15 +127,36 @@ label {
   .success-message p {
     padding: 0 0.5rem;
   }
+}
+  @media (max-width: 500px) {
+    .contact-menu {
+      width: 78%;
+      top:65%;
+      left:56%;
+    }
+    form {
+      width: 100%;
+    }
+    input,
+    #message {
+      width: 92%;
+    }
 
-
-
-
-
-
-  .custom-snackbar {
+    .success-message p {
+      padding: 0 0.5rem;
+    }
+    .custom-snackbar {
     background-color: #f44336; /* Red color */
     color: white;
   }
+    button {
+
+      font-size: 1.2rem;
+      width: 90%;
+      padding: 0.5rem 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
 
 }
