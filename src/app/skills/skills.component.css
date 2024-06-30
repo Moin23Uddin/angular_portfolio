@@ -101,8 +101,23 @@ li{
     height: 30px;
     margin: 0px;
   }
-}
+  .card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    margin-top: -12px;
+  }
+  .custom-button-part1 {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    overflow: hidden;
+  }
+  .card-title{
+    font-size :20px ;
+  }
 
+}
 
 @media (max-width: 500px) {
   .card {
@@ -113,7 +128,21 @@ li{
     height: 30px;
     margin: 0px;
   }
+  .card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    margin-top: -12px;
+  }
+  .custom-button-part1 {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    overflow: hidden;
+  }
 
-
+  .card-title{
+  font-size :20px ;
+  }
 }
 
