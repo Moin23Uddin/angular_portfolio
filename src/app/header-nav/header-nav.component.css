@@ -1,17 +1,21 @@
-.navbar{
+/* General styles */
+.navbar {
   width: 90%;
   padding: 10px;
-  margin:  auto;
+  margin: auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.navbar ul{
+.navbar ul {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -21,15 +25,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
-li a:hover{
+li a:hover {
   transition: 0.6s;
   background: linear-gradient(to right, transparent 0%, #65666fad, #beb7ba7d);
   padding: 0.5rem 1rem;
   border-radius: 90px;
 }
+
+/* Player stats */
 #playerStats {
   width: 15rem;
   height: 4rem;
@@ -38,14 +43,16 @@ li a:hover{
   flex-direction: column;
   justify-content: space-between;
   left: 3rem;
+  color: white;
+  top: 2rem; /* Adjust top position as needed */
 }
 
-h1 {
+#playerStats h1 {
   margin: 0;
   font-size: 2rem;
 }
 
-h2 {
+#playerStats h2 {
   margin: 0;
   font-size: 1rem;
 }
@@ -69,22 +76,112 @@ h2 {
   width: 6.2rem;
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 1100px) {
   #playerStats {
+    position: absolute;
+    top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 8rem;
-    height: 2.5rem;
-    top: 2rem;
+    width: 100%;
+    text-align: start;
   }
-  h1 {
-    font-size: 0.8rem;
+  #playerStats h1 {
+    font-size: 1.5rem;
   }
-  h2,
-  h3,
-  p {
-    font-size: 0.7rem;
+  #playerStats h2 {
+    font-size: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
+@media (max-width: 700px) {
+  #playerStats {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    text-align: start;
+  }
+
+  #playerStats h1 {
+    font-size: 1.5rem;
+  }
+
+  #playerStats h2 {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+  @media (max-width: 500px) {
+    #playerStats {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95%;
+      text-align: center;
+      align-items: end;
+      display:none;
+    }
+
+    #playerStats h1 {
+      font-size: 1.5rem;
+    }
+
+    #playerStats h2 {
+      font-size: 1rem;
+    }
+
+    .navbar {
+      flex-direction: column;
+      width: 30%;
+      margin-left: 20px;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .navbar ul li {
+      width: 100%;
+    }
+
+    .navbar ul li a {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
 
