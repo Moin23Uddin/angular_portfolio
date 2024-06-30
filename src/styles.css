@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+body {
+  font-family: "Russo One", sans-serif;
+  color: white;
+  /*color: red;*/
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.custom-snackbar {
+  background-color: #f44336;
+  color: white;
+  position: fixed;
+  top: 40px;
+  left: 43%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+

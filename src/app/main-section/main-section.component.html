@@ -1,0 +1,77 @@
+<div class="d-flex justify-content-between">
+<div class="buttonDiv">
+  <div class="tabArray ms-5" *ngFor="let arr of tabArray; let i = index">
+    <button
+      class="btn"
+      type="button"
+      collapseToggle
+      [ngClass]="{'custom-button': isActive[i], 'default-button': !isActive[i]}"
+      (click)="setActive(i);clickFortab(i)">
+      {{arr}}
+    </button>
+  </div>
+</div>
+
+  <div class="card" *ngIf="personal && !education && !career">
+    <div class="card-body mb-3">
+    <h5 class="card-title mb-3">Personal Information</h5>
+      <button
+        class="custom-button-part1 mb-3"
+        type="button"
+       > About
+      </button>
+    <p class="card-text mb-3">I am a Computer Science and Engineering graduate from BRAC University, Bangladesh. I completed my O-level and A-level from Maple Leaf International School. I was a student tutor for one year at Brac University. I love technology and I am interested in web development and software engineering. Currently. I am doing an Internship in Java Full Stack Development at Addie Soft Limited.</p>
+  </div>
+</div>
+
+  <div class="card" *ngIf="education">
+    <div class="card-body mb-3">
+      <h5 class="card-title mb-3">Education</h5>
+      <button
+        class="custom-button-part1 mb-3"
+        (click)="toggleCollapse('isCollapsed')"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
+        type="button"
+        collapseToggle
+        [isCollapsed]="isCollapsed"
+      > 2023 Bachelor's Degree
+      </button>
+      <p class="card-text mb-3"  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" >CGPA 3.82/ 4.0</p>
+      <p class="card-text mb-3"  #collapseOne="ngbCollapse" [(ngbCollapse)]="isCollapsedOne" >
+        <span style="text-decoration: underline;">O Level</span>
+        <br>
+        Achieved 6 A*, 1 A, and 1 B
+        <br>
+        <span style="text-decoration: underline;">A Level</span>
+        <br>
+        Achieved 2A, and 1B
+      </p>
+      <button
+        class="custom-button-part1 mb-3"
+        (click)="toggleCollapse('isCollapsedOne')"
+        [attr.aria-expanded]="!isCollapsedOne"
+        aria-controls="collapseExample"
+        type="button"
+        collapseToggle
+        [isCollapsed]="isCollapsedOne"
+      > 2019 High School Degree
+      </button>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="career">
+    <div class="card-body mb-3">
+      <h5 class="card-title mb-3">Career</h5>
+      <button
+        class="custom-button-part1 mb-3"
+        type="button"
+      > Current Job
+      </button>
+      <p class="card-text mb-3">Currently I am a trainer  in Java Full Stack
+        Development at Addie Soft
+        Limited.</p>
+    </div>
+  </div>
+
+</div>

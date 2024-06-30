@@ -1,0 +1,56 @@
+<background>
+  <header-nav></header-nav>
+  <div class="card" >
+    <div class="card-body mb-3">
+    <h5 class="card-title mb-3">SKILLS</h5>
+    <button
+      class="custom-button-part1 mb-3"
+      (click)="toggleCollapse('isCollapsed')"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+      type="button"
+      collapseToggle
+      [isCollapsed]="isCollapsed"
+    > PROGRAMMING LANGUAGE
+    </button>
+    <ul class="skills-list"   [(ngbCollapse)]="isCollapsed" >
+      <li><img src="assets/images/java.png" alt="Java Icon"> JAVA</li>
+      <li><img src="assets/images/javascript.png" alt="JavaScript Icon">JAVASCRIPT</li>
+      <li><img src="assets/images/python.png" alt="JavaScript Icon">PYTHON</li>
+    </ul>
+<!--    <p class="card-text mb-3"  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" >CGPA 3.82/ 4.0</p>-->
+    <ul class="skills-list"   [(ngbCollapse)]="isCollapsedOne" >
+      <li><img src="assets/images/html.png" alt="HTML Icon"> HTML</li>
+      <li><img src="assets/images/css.png" alt="CSS Icon"> CSS</li>
+      <li><img src="assets/images/bootstrap.png" alt="Bootstrap Icon">BOOTSTRAP</li>
+      <li><img src="assets/images/tailwind.png" alt="Tailwind Icon"> TAILWIND</li>
+      <li><img src="assets/images/angular.png" alt="Angular Icon">ANGULAR</li>
+    </ul>
+
+    <button
+      class="custom-button-part1 mb-3"
+      (click)="toggleCollapse('isCollapsedOne')"
+      [attr.aria-expanded]="!isCollapsedOne"
+      aria-controls="collapseExample"
+      type="button"
+      collapseToggle
+      [isCollapsed]="isCollapsedOne"
+    > FRONT-END
+    </button>
+    <ul class="skills-list"   [(ngbCollapse)]="isCollapsedTwo" >
+      <li><img src="assets/images/springboot.png" style = "padding-right: 4px " alt="HTML Icon">SPRINGBOOT</li>
+      <li><img src="assets/images/postgreysql.png" alt="CSS Icon">POSTGREYSQL</li>
+    </ul>
+    <button
+      class="custom-button-part1 mb-3"
+      (click)="toggleCollapse('isCollapsedTwo')"
+      [attr.aria-expanded]="!isCollapsedTwo"
+      aria-controls="collapseExample"
+      type="button"
+      collapseToggle
+      [isCollapsed]="isCollapsedTwo"
+    > BACK-END
+    </button>
+  </div>
+  </div>
+</background>

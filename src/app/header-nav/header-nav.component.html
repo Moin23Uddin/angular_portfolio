@@ -1,0 +1,38 @@
+<div class="navbar">
+
+  <div id="playerStats">
+    <h1>Moin Uddin</h1>
+    <div id="playerStats__lines">
+      <span id="playerStats__lines__thick"></span>
+      <span id="playerStats__lines__thin"></span>
+    </div>
+    <h2>Java Fullstack Developer</h2>
+  </div>
+
+  <ul>
+    <li>
+      <a href="#">
+      <img src="assets/images/about%20(1).png">
+      <div  class="mt-1">
+      About
+</div>
+    </a>
+    </li>
+    <li><a routerLink="/Skills" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" >
+      <img src="assets/images/solution.png">
+      <div  class="mt-1">
+        Skills
+      </div></a></li>
+    <li><a routerLink="/Projects" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">
+      <img src="assets/images/layers.png">
+      <div  class="mt-1">
+      Projects
+    </div></a></li>
+    <li><a routerLink="/Contact" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" >
+      <img src="assets/images/customer-service.png">
+      <div class="mt-1">
+        Contact
+      </div></a></li>
+  </ul>
+</div>
+

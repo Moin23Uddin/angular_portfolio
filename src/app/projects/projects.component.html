@@ -1,0 +1,61 @@
+<background>
+  <header-nav></header-nav>
+  <div class="d-flex justify-content-between">
+    <div class="buttonDiv">
+      <div class="tabArray ms-5" *ngFor="let arr of tabArray; let i = index">
+        <button
+          class="btn"
+          type="button"
+          collapseToggle
+          [ngClass]="{'custom-button': isActive[i], 'default-button': !isActive[i]}"
+          (click)="setActive(i);clickFortab(i)">
+          {{arr}}
+        </button>
+      </div>
+    </div>
+
+    <div class="card" *ngIf="projectOne">
+      <div class="card-body mb-3">
+        <h5 class="card-title">Quranify Using JavaScript</h5>
+        <div class="video-container">
+          <video controls>
+            <source src="assets/images/quranify.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <button
+          class="custom-button-part1 mb-3"
+          type="button"
+          (click) = "goToLink('1')"
+          collapseToggle
+        > GITHUB
+        </button>
+      </div>
+    </div>
+
+    <div class="card" *ngIf="projectTwo">
+      <div class="card-body mb-3">
+        <h5 class="card-title">Crud Operation Using SpringBoot</h5>
+        <h5 class="card-title">and Angular</h5>
+        <div class="video-container">
+          <video controls>
+            <source src="assets/images/crud.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+          <button
+            class="custom-button-part1 mb-3"
+            type="button"
+            (click) = "goToLink('2')"
+            collapseToggle
+          > GITHUB
+          </button>
+      </div>
+
+    </div>
+
+    </div>
+
+
+</background>
