@@ -31,14 +31,14 @@ export class ContactComponent {
         .then(
           (result: EmailJSResponseStatus) => {
             console.log('SUCCESS!', result.text);
-            this.snackBar.open('Email sent successfully!', 'Close', {
+            this.snackBar.open('Sent successfully!', 'Close', {
               duration: 3000,
               panelClass: ['custom-snackbar'],
             });
           },
           (error) => {
             console.log('FAILED...', error.text);
-            this.snackBar.open('Failed to send email. Please try again.', 'Close', {
+            this.snackBar.open('Failed to send. Please try again.', 'Close', {
               duration: 3000,
               panelClass: ['custom-snackbar'],
             });
