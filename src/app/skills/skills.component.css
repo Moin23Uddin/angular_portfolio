@@ -1,6 +1,7 @@
 li{
   list-style: none;
 }
+
 .custom-button {
   position: relative;
   background: linear-gradient(to right, transparent 0%, #65666fad, #beb7ba7d);
@@ -92,6 +93,7 @@ li{
   font-size: 16px;
 }
 
+/*//media queries*/
 @media (max-width: 700px) {
   .card {
     width: 400px;
@@ -135,6 +137,7 @@ li{
     height: 590px;
     margin-top: -12px;
   }
+
   .custom-button-part1 {
     padding: 0.2rem 0.5rem;
     font-size: 0.8rem;

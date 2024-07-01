@@ -108,11 +108,13 @@ label {
     top: 50%;
   }
 }
+
+/*//media queries*/
 @media (max-width: 700px) {
   .contact-menu {
     width: 78%;
-    top:65%;
-    left:56%;
+    top:78%;
+    left:54%;
   }
 
   form {
@@ -131,8 +133,8 @@ label {
   @media (max-width: 500px) {
     .contact-menu {
       width: 78%;
-      top:65%;
-      left:56%;
+      top:78%;
+      left:54%;
     }
     form {
       width: 100%;
@@ -145,6 +147,7 @@ label {
     .success-message p {
       padding: 0 0.5rem;
     }
+    
     .custom-snackbar {
     background-color: #f44336; /* Red color */
     color: white;
@@ -157,6 +160,10 @@ label {
       background-color: transparent;
       border: none;
       cursor: pointer;
+    }
+
+    .textArea {
+      width: 17rem;
     }
 
 }

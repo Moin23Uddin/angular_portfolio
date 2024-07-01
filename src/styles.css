@@ -9,11 +9,10 @@ html, body {
   color: white;
   /*color: red;*/
   -webkit-tap-highlight-color: transparent;
-  overflow: hidden; /* Ensure no overflow on the body and html */
+  /* Ensure no overflow on the body and html */
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 
 .custom-snackbar {
   background-color: #f44336;
