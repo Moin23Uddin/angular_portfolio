@@ -206,6 +206,11 @@ video {
     margin-top: 0px;
   }
 
+  .video-container {
+    position: relative;
+    max-width: 96%;
+  }
+  
   .card-header {
     font-weight: 500;
     font-size: 17px;
@@ -215,5 +220,8 @@ video {
   font-size: 18px;
   }
 
+  .custom-button-part1{
+    text-align: center;
+  }
 }
 
